@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--metadata goes here-->
+
+	<title>HTML Notes</title> <!-- This text os displayed at the top of the webpagae in the tab -->
+</head>
+<body>
+<!-- Most of the text of the webpage is located here -->
+	<h1>Heading 1</h1>
+	<h2>Smaller heading h2</h2>
+	<h3>Headings should decrease in order from 1-6</h3>
+	<h4>This helps keep page layour correct</h4>
+	<h5>But also helps users use screen-readers</h5>
+
+	<!-- br tags create a page break. Can be used to space out webpagaes -->
+	<br>
+
+	<h1>Paragraphs & Fotns</h1>
+	<p>A "p" tag is used for paragraphs of text.
+	To start a new paragraph of text you must use a new p tag</p>
+
+	<!-- To paragraph a text you must use a new <p> tag -->
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+
+	<p><strong>Strong makes text bold.</strong>This is better practise than using a bold tag because screen-readers understand strong</p>
+
+	<p><em>Em makes text italicised.</em>This is better practise than using a bold tag because screen-readers understand strong</p>
+	<br>
+
+
+	<h1>Lists</h1>
+	<h2>Ordered List</h2>
+	<p>Ordered lists order the list items</p>
+	<ol>
+		<li>Red</li>
+		<li>Orange</li>
+		<li>Yellow</li>
+	</ol>
+
+	<h2>Unordered List</h2>
+	<p>Whereas, unordered list don't</p>
+	<ul>
+		<li>Red</li>
+		<li>Orange</li>
+		<li>Yellow</li>
+	</ul>
+
+	<h2>Nested Lists</h2>
+	<ul>
+		<li>You can also nest lists</li>
+			<ol>
+				<li>Within lists</li>
+				<li>And even further, you can have lists of</li>
+					<ul>
+						<li>lists...</li>
+							<ul>
+								<li>of lists</li>
+									<ol>
+										<li>of lists</li>
+										<li>and lists</li>
+										<li>and so on</li>
+										<li>and on...</li>
+									</ol>
+							</ul>
+					</ul>
+			</ol>
+		<li>However, this can get messy so nest carefully</li>
+	</ul>
+	<br>
+
+
+	<h1>Links</h1>
+	<h2>Image Link</h2>
+	<p>Insert images using links directly to Google or some your directory</p>
+	<img height="300" src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
+	<img height="300" src="images/rhcp.jpg">
+
+<!-- <img src="picture.jpg">		picture.jpg is located in the same folder as the current page
+	<img src="images/picture.jpg">	picture.jpg is located in the images folder in the current folder
+	<img src="/images/picture.jpg">	picture.jpg is located in the images folder at the root of the current web
+	<img src="../picture.jpg">		picture.jpg is located in the folder one level up from the current folder -->
+	<h2>Hyper links</h2>
+	<p>Hyperlinks can be used to link your webpages together to form a website or be used to link to an exernal webpage</p>
+	<p>You can link addresses within a paragraph tag like this: <a href="https://google.com/">Google</a></p>
+	<a href="html-notes2.html">Or simply just have a link by itself. This link is external</a>
+	<br>
+
+	<h1>Tables</h1>
+	<p>Tables are used to display data</p>
+
+	<table>
+		<tr>
+			<td>Row 1</td>
+			<td>Row 1</td>
+			<td>Row 1</td>
+		</tr>
+		<tr>
+			<td>Col 1</td>
+			<td>Col 2</td>
+			<td>Col 3</td>
+		</tr>
+	</table>
+	<p>Can can be as big and as complex as you like</p>
+
+	<table border="1">
+	<thead>
+		<tr>
+			<td>Band</td>
+			<td>Genre</td>
+			<td>Songs</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Red Hot Chili Peppers</td>
+			<td>
+				<ul>
+					<li>Rock</li>
+					<li>Funk Rock</li>
+					<li>Rap Rock</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>Californiacation</li>
+					<li>Otherside</li>
+					<li>Snow</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>Slipknot</td>
+			<td>
+				<ul>
+					<li>Heavy Metal</li>
+					<li>Nu Metal</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>Psychosocial</li>
+					<li>Duality</li>
+					<li>The Devil in I</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>Linkin Park</td>
+			<td>
+				<ul>
+					<li>Rock</li>
+					<li>Nu Metal</li>
+					<li>Rap Rock</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>Numb</li>
+					<li>In the End</li>
+					<li>New Divide</li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+</body>
+</html>
